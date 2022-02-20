@@ -1,0 +1,48 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <route default>
+      <div>
+        <h1>Welcome to the Single-SPA Ecosystem</h1>
+        <p>
+          This is the single-spa ecosystem layout.
+          <br />
+          <br />
+          To learn more about the ecosystem, see the
+          <a href="https://single-spa.js.org/docs/ecosystem">ecosystem documentation</a>.
+        </p>
+      </div>
+      <div>
+        <application name="@serve:single-spa:mf-emitter"></application>
+      </div>
+      <div>
+        <application name="@serve:single-spa:mf-receiver"></application>
+      </div>
+    </route>
+    <route path="storybook">
+      <div>
+        <h1>Storybook</h1>
+      </div>
+      <div>
+        <application name="@serve:single-spa:mf-component-library"></application>
+      </div>
+    </route>
+  </main>
+</single-spa-router>
