@@ -18,8 +18,10 @@ Run `npm run test`
 
 ## Using the library from projects on the one-repo setup
 
-Run `npm i file:../mf-component-library/dist/ui-lib`and add to the global styles.scss:
+Run `npm i ../ui-library/dist/ui-lib`
+
+Add to the global styles.scss:
 `@import "../node_modules/ui-lib/_ui-lib.styles.scss";`
 
 Add the followed code to tsconfig.json file from target project.
-` "compilerOptions": { ...​ "paths": { ​ "@angular/*": [ "./node_modules/@angular/*" ],​ "my-lib": [ "../my-lib/projects/my-lib/src/public-api" ] }​ ... }`
+` "compilerOptions": { ...​ "paths": { ​ "@angular/*": [ "./node_modules/@angular/*" ],​ "my-lib": [ "../ui-library/projects/ui-lib/src/public-api" ] }​ ... }`
