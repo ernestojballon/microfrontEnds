@@ -6,9 +6,7 @@
       "@angular/*": [
         "./node_modules/@angular/*"
       ],
-      "component-lib": [
-        "../mf-component-library/dist/component-lib"
-      ]
+      // "ui-lib": [ "../ui-library/projects/ui-lib/src/public-api" ],
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",

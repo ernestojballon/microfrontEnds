@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { ButtonToExportComponent } from '@serve:single-spa:mf-emitter';
-import { UiComponentsModule } from 'component-lib';
+import { UiLibModule } from 'ui-lib';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,16 +11,9 @@ import { UiComponentsModule } from 'component-lib';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UiComponentsModule
+    UiLibModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { 
-
-  constructor() {
-    console.log({
-      UiComponentsModule
-    });
-  }
-}
+export class AppModule {}
