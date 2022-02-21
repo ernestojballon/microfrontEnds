@@ -7,8 +7,8 @@ module.exports = (config, options) => {
   // Feel free to modify this webpack config however you'd like to
   return merge(singleSpaWebpackConfig,
     {externals: [
-      '@serve:single-spa:mf-store',
-      '@serve:single-spa:mf-emitter',
+      '@ess:single-spa:mf-store',
+      '@ess:single-spa:mf-emitter',
       ]
   });
 };

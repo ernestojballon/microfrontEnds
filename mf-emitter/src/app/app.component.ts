@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { setAuth,setToken } from '@serve:single-spa:mf-store';
+import { setAuth,setToken } from '@ess:single-spa:mf-store';
 @Component({
   selector: 'mf-emitter',
   templateUrl: './app.component.html',

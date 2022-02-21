@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {getStateObservable} from '@serve:single-spa:mf-store'
-import { variable } from '@serve:single-spa:mf-emitter';
-import { UiComponentsModule } from '@serve:single-spa:mf-emitter';
+import {getStateObservable} from '@ess:single-spa:mf-store'
 @Component({
   selector: 'mf-reciever',
   templateUrl: './app.component.html',

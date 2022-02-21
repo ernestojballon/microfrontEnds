@@ -18,12 +18,20 @@
   -->
 
   <main>
+    <div>
+      <application name="@ess:single-spa:mf-nav"></application>
+    </div>
     <route default>
       <div>
         <h1>Welcome to the Single-SPA Ecosystem</h1>
       </div>
+    </route>
+    <route path="emitter">
       <div>
-        <application name="@serve:single-spa:mf-emitter"></application>
+        <h1>Storybook</h1>
+      </div>
+      <div>
+        <application name="@ess:single-spa:mf-emitter"></application>
       </div>
     </route>
     <route path="receiver">
@@ -31,7 +39,7 @@
         <h1>Storybook</h1>
       </div>
       <div>
-        <application name="@serve:single-spa:mf-receiver"></application>
+        <application name="@ess:single-spa:mf-receiver"></application>
       </div>
     </route>
   </main>
