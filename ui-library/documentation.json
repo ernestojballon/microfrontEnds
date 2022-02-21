@@ -744,6 +744,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui-lib/src/lib/atoms/custom-comp/custom-comp.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -775,16 +785,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/ui-lib/src/lib/atoms/navbar/navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -923,6 +923,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponentComponent>",
+                "defaultValue": "(args: ButtonComponentComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui-lib/src/lib/atoms/custom-comp/custom-comp.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -958,16 +968,6 @@
                 "deprecationMessage": "",
                 "type": "Story<NavbarComponent>",
                 "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponentComponent>",
-                "defaultValue": "(args: ButtonComponentComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -993,6 +993,28 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
+                }
+            ],
+            "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponentComponent>",
+                    "defaultValue": "(args: ButtonComponentComponent) => ({\n  props: args,\n})"
                 }
             ],
             "projects/ui-lib/src/lib/atoms/custom-comp/custom-comp.stories.ts": [
@@ -1081,28 +1103,6 @@
                     "deprecationMessage": "",
                     "type": "Story<NavbarComponent>",
                     "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui-lib/src/lib/atoms/button-component/my-lib.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonComponentComponent>",
-                    "defaultValue": "(args: ButtonComponentComponent) => ({\n  props: args,\n})"
                 }
             ],
             "stories/Button.stories.ts": [

@@ -8,15 +8,14 @@ import {getStateObservable} from '@ess:single-spa:mf-store'
 export class AppComponent {
 
   title = 'mf-receiver';
+  buttonText = 'Click me!';
   ngOnInit() {
-   
     getStateObservable().subscribe((value:any)=>console.log(`
-    
-    
     ${JSON.stringify(value)}
-    
-    
-    `))
-    
+    `)) 
+  }
+  onButtonClick = (e:Event)=>{
+      this.buttonText = 'clicked';
+      console.log('clicked',e)
   }
 }

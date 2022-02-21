@@ -19,3 +19,10 @@ const Template: Story<ButtonComponentComponent> = (args: ButtonComponentComponen
 export const Default = Template.bind({});
 
 Default.args = {} as Partial<ButtonComponentComponent>;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  text: 'Click and see the console',
+  color: 'primary',
+  onClick: () => { console.log('executing call back') }
+};
