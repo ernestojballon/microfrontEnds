@@ -1,12 +1,5 @@
-<h1>Nav is Ready</h1>
 <div>
-  <a [routerLink]="['/']">
-    <button mat-raised-button color="accent">Home</button>
-  </a>
-    <a [routerLink]="['/emitter']">
-      <button mat-raised-button color="primary">Emitter</button>
-    </a>
-    <a [routerLink]="['/receiver']">
-      <button mat-raised-button color="accent">Receiver</button>
-    </a>
+  <lib-navbar
+  [actions]="actions"
+  ></lib-navbar>
 </div>  

@@ -1,5 +1,9 @@
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle value="bold">Bold</mat-button-toggle>
-    <mat-button-toggle value="italic">Italic</mat-button-toggle>
-    <mat-button-toggle value="underline">Underline</mat-button-toggle>
-</mat-button-toggle-group>
+<div class="buttonContainer" name="fontStyle" aria-label="Font Style">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+  <lib-button-component *ngFor="let action of actions"
+    [text]="action.text"
+    [color]="action.color"
+    [onClick]="action.onclick"
+      ></lib-button-component>
+</div>

@@ -17,7 +17,6 @@ const Template: Story<ButtonComponentComponent> = (args: ButtonComponentComponen
 });
 
 export const Default = Template.bind({});
-
 Default.args = {} as Partial<ButtonComponentComponent>;
 
 export const Primary = Template.bind({});

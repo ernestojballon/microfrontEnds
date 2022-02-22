@@ -21,7 +21,11 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": { ​ 
+      "@angular/*": [ "./node_modules/@angular/*" ],​ 
+      "ui-lib": [ "../ui-library/projects/ui-lib/src/public-api" ] 
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
