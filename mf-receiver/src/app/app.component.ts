@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {getStateObservable} from '@ess:single-spa:mf-store'
 @Component({
   selector: 'mf-reciever',
@@ -7,15 +8,25 @@ import {getStateObservable} from '@ess:single-spa:mf-store'
 })
 export class AppComponent {
 
-  title = 'mf-receiver';
-  buttonText = 'Click me!';
+  constructor(
+    private router: Router
+  ) { }
   ngOnInit() {
     getStateObservable().subscribe((value:any)=>console.log(`
     ${JSON.stringify(value)}
     `)) 
   }
-  onButtonClick = (e:Event)=>{
-      this.buttonText = 'clicked';
-      console.log('clicked',e)
-  }
+  actions = [
+    {
+      text: 'Receiver-page1',
+      color: 'primary',
+      onclick: () => this.router.navigate(['/receiver/page1'])
+    },
+    {
+      text: 'Receiver-page2',
+      color: 'warn',
+      onclick: () => this.router.navigate(['/receiver/page2'])
+    }
+  ] 
+  
 }
